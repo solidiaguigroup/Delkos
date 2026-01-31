@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>À propos de nous - SOLIDIAGUI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Styles spécifiques à cette page */
+    .about-page-container {
+      background: var(--card);
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      padding: 30px;
+      margin-top: 60px;
+      box-shadow: var(--shadow);
+    }
+    .about-page-container h1 {
+      font-size: 1.5rem;
+      color: var(--accent-2);
+      margin-top: 0;
+    }
+    .about-page-container p {
+      line-height: 1.6;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+    .back-btn {
+      display: inline-block;
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      border-radius: 12px;
+      font-weight: 600;
+      color: var(--text);
+      transition: all 0.2s ease;
+    }
+    .back-btn:hover {
+      transform: translateY(-2px);
+      border-color: var(--ring);
+      box-shadow: 0 8px 20px rgba(31, 191, 91, 0.12);
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <section class="about-page-container">
+      <h1>À propos de nous</h1>
+      <p>
+
+Delkos est une entreprise spécialisée dans le linge de maison et les vêtements de nuit haut de gamme, conçus pour allier confort, élégance et qualité durable. <br> <br>
+
+Notre marque propose une large gamme de produits comprenant : <br> <br>
+
+🔹 Draps et couettes haut de gamme <br>
+
+🔹 Pyjamas et vêtements de nuit pour enfants <br>
+
+🔹 Pyjamas et tenues de maison pour hommes. <br> <br>
+
+Chaque collection Delkos est pensée pour offrir une sensation de bien-être au quotidien, grâce à des tissus doux, respirants et résistants, associés à des designs modernes et soignés. <br> Nos produits sont adaptés aussi bien 
+à la détente à la maison qu’à un sommeil confortable et réparateur. <br> <br>
+
+Chez Delkos, nous accordons une attention particulière aux finitions, aux coupes et au style, afin de répondre aux attentes des familles et des clients exigeants qui recherchent à la fois praticité, esthétique et confort premium.
+
+Delkos, c’est le confort qui se voit et la qualité qui se ressent.
+
+      </p>
+      <p>
+     
+      </p>
+      <a href="index.html" class="back-btn">← Retour</a>
+    </section>
+
+    <footer class="footer">
+      © <span id="year"></span> FIDUCIA GROUP — Tous droits réservés
+    </footer>
+  </main>
+  
+  <script src="script.js"></script>
+  <script>
+    const YEAR_EL = document.getElementById('year');
+    if (YEAR_EL) YEAR_EL.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
